@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+:root{
+
+--LimeColor: hsl(61, 70%, 52%);
+--RedColor: hsl(4, 69%, 50%);
+
+
+--White: hsl(0, 0%, 100%);
+--Slate-100: hsl(202, 86%, 94%);
+--Slate-300: hsl(203, 41%, 72%);
+--Slate-500: hsl(200, 26%, 54%);
+--Slate-700: hsl(200, 24%, 40%);
+--Slate-900: hsl(202, 55%, 16%);
+
+--main-font:"Plus Jakarta Sans", sans-serif;
+
+}
+*{
+    
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: var(--main-font);
+    background-color:var(--Slate-100) ;
+    height: 100%; /* Ensure the body and html take up full height */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-section{
+    display: flex;
+    background-color: var(--White);
+    flex-wrap: wrap;
+    width: auto;
+    margin: auto;
+    justify-content: center;
+    box-shadow: 0 5px 15px var(--Slate-300);
+   
+}
+.left-side{
+display: flex;
+flex-direction: column;
+padding: 1em;
+flex:1;
+}
+
+.top-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+}
+.top-part h1{
+    color: var(--Slate-900);
+    font-size: 1.4em;
+}
+.top-part a{
+    color: var(--Slate-500);
+}
+
+.input-one,.input-two,.input-radio,.input-button{
+margin-bottom: 1.6em;
+}
+.input-radio{
+    position: relative;
+}
+label{
+    color: var(--Slate-700);
+    font-size: 1em;
+}
+.label2{
+    margin-top: .5em;
+    position: relative;
+}
+.input-one{
+    position: relative;
+}
+.label-years{
+    position: relative;
+}
+.input-one input[type="number"]{
+    padding-left: 50px;
+}
+.repay-radio,.interest-radio{
+    outline: 1px solid var(--Slate-300);
+    padding: .7em 1em;
+    margin-bottom: .8em;
+    margin-top: .7em;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+}
+.repay-radio:hover,.interest-radio:hover{
+outline: 1px solid var(--LimeColor
+);
+}
+
+.red-background {
+    background-color: hsl(62, 76%, 81%);
+}
+/* Hide the default radio button */
+input[type="radio"] {
+    display: none;
+}
+
+/* Style for the custom radio button */
+.radio-label {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+/* Create a custom radio button */
+.radio-label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #d3d3d3;
+    background-color: white;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+/* Style the radio button when it is checked */
+input[type="radio"]:checked + .radio-label:before {
+    background-color: var(--LimeColor); /* Circle color */
+    border-color: var(--LimeColor);; /* Circle border color */
+}
+
+/* Style the inner dot of the radio button when checked */
+input[type="radio"]:checked + .radio-label:after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--White);
+}
+
+
+input[type='number']{
+    width: 100%;
+    outline:1px solid var(--Slate-300);
+    padding: .7em 1em;
+    border-radius:5px ;
+    border: none;
+    font-weight: 900;
+    color: var(--Slate-900);
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+    margin-top: 1em;
+    line-height: 20px;
+}
+.input-one .dollar,.input-two .label-years .years,.input-two .label2 .percent{
+    font-weight: 700;
+    position: absolute;
+    background-color: var(--Slate-100);
+    bottom: 0;
+    border-radius:5px ;
+    border: none;
+    height: fit-content;
+    outline:1px solid var(--Slate-300);
+    padding: .6em .7em;
+    color: var(--Slate-700);
+    pointer-events: none;
+}
+.input-two .label-years .years,.input-two .label2 .percent{
+    right: 0;
+}
+.input-one .dollar{
+    left: 0;
+}
+
+
+.repay-radio label,.interest-radio label{
+    font-weight: 900;
+    color: var(--Slate-900);
+    margin: 0 .6em;
+}
+.input-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--LimeColor);
+    padding: .6em 1em;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.input-button:hover{
+    cursor: pointer;
+}
+#calculator{
+    text-decoration: none;
+    text-align: center;
+    margin: 0 .6em;
+    color: var(--Slate-900);
+    font-weight: 700;
+}
+.input-button:hover{
+opacity: .8;
+
+}
+
+
+.right-side{
+    display: flex;
+    flex-direction: column ;
+    justify-content: start;
+    align-items: start;
+    padding:4rem 2rem ;
+    background-color: var(--Slate-900);
+    color: var(--White);
+    flex: 1;
+}
+
+.right-side .empty_p{
+margin:1em auto;
+text-align: left  ;
+color: var(--Slate-300);
+font-size: 1em;
+}
+.result_p{
+    color:var(--Slate-300);
+    font-size:1.2em ;
+}
+.black-box{
+    background-color:  hsl(203, 55%, 10%);
+    padding: 2em;
+    text-align: left;
+    width: 100%;
+    border-radius: 10px;
+    border-top: 5px solid var(--LimeColor);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    flex: 1;
+}
+.black-box span{
+    color:var(--Slate-300);
+    font-size:1em ;
+}
+.black-box h1{
+    color: var(--LimeColor);
+    font-size: 4rem;
+}
+.black-box h5{
+    font-size: 2rem;
+}
+
+
+
+
+.error-message {
+    color: red;
+    display: none;
+    font-size: 12px;
+    
+    position: absolute;
+    right: 0;}
+
+input.invalid,
+input:invalid {
+    border-color: red;
+}
+
