@@ -43,7 +43,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/mortgage-repayment-calculator-solution-O-kFghkvbO)
 - Live Site URL: [Add live site URL here](https://mortgage-calculator-blush.vercel.app)
 
 ## My process
