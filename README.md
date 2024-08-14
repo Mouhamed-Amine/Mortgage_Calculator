@@ -1,6 +1,6 @@
 # Frontend Mentor - Mortgage repayment calculator solution
 
-![Desktop_view](./design/DESKTOP.JPG)
+![Mobile_view](./design/iPhone-13-PRO-127.0.0.1.png)
 
 ## Table of contents
 
