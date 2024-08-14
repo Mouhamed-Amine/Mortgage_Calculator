@@ -1,5 +1,7 @@
 # Frontend Mentor - Mortgage repayment calculator solution
 
+![Desktop_view](./design/DESKTOP.JPG)
+
 ## Table of contents
 
 - [Overview](#overview)
